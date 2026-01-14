@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login</title>
     <link rel="stylesheet" href="static/index.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="/login" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="submit">Login</button>
+    <main class="container" aria-label="Área de login">
+        <h1>Entrar</h1>
+        <form action="/login" method="post" autocomplete="on">
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required autocomplete="username" placeholder="Digite seu usuário">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password" placeholder="Digite sua senha">
+            </div>
+            <button type="submit">Entrar</button>
         </form>
-        <a href="/forgot.html">esqueceu senha?</a>
-        <a href="/register.html">ja tem conta?</a>
-    </div>
+        <nav class="login-links">
+            <a href="/forgot.html">Esqueceu sua senha?</a>
+            <a href="/register.html">Não tem uma conta?</a>
+        </nav>
+    </main>
 </body>
 </html>
