@@ -47,4 +47,4 @@ Sistema básico de autenticação com páginas de **Login**, **Registro** e **Re
 1. Clone o repositório
 
 ```bash
-git clone https://github.com/SEU_USUARIO/authflow.git
+git clone https://github.com/SEU_USUARIO/authflow.git](https://github.com/airtin010/LOGIN-PAGE.git
